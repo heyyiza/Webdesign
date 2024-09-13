@@ -1,88 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head></head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15+Charted&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <h1>
-        <center>Formulário:</center>
-    </h1><br>
-
-    <h2>Data:</h2>
-    <input type="date"><br>
-
-    <h2>Dados de acesso:</h2>
-    <form action="https://www.w3schools.com/action_page.php" method="post">
-        <label for="fname">Usuário:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Senha:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-
-        <h2>Dados Pessoas:</h2>
-        <label for="first_name">First Name:</label><br>
-        <input type="text" id="first_name" name="first_name"><br>
-        <label for="last_name">Last Name:</label><br>
-        <input type="text" id="last_name" name="last_name"><br><br>
-
-        <h2>Endereço:</h2>
-        <label for="endereco">Endereço:</label><br>
-        <input type="text" id="endereco" name="endereco" required><br><br>
-        <label for="numero">Número:</label><br>
-        <input type="text" id="numero" name="numero" required><br><br>
-        <label for="complemento">Complemento:</label><br>
-        <input type="text" id="complemento" name="complemento"><br><br>
-        <label for="cidade">Cidade:</label><br>
-        <input list="cidades" id="cidade" name="cidade" required>
-        <datalist id="cidades">
-            <option value="São Paulo"></option>
-            <option value="Rio de Janeiro"></option>
-            <option value="Belo Horizonte"></option>
-            <option value="Porto Alegre"></option>
-            <option value="Curitiba"></option>
-        </datalist><br><br>
-        <label for="estado">Estado:</label><br>
-        <select id="estado" name="estado" required>
-            <option value="SP">São Paulo</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="PR">Paraná</option>
-        </select><br><br>
-        <label for="cep">CEP:</label><br>
-        <input type="text" id="cep" name="cep" required><br><br>
-
-        <h2>Gênero:</h2>
-        <input type="radio" id="Feminino" name="genero" value="Feminino" checked>
-        <label for="Feminino">Feminino</label><br>
-        <input type="radio" id="Masculino" name="genero" value="Masculino">
-        <label for="Masculino">Masculino</label><br>
-        <input type="radio" id="nao" name="genero" value="não">
-        <label for="nao">Prefiro não identificar</label><br><br>
-
-        <h2>Curso:</h2>
-        <input type="checkbox" id="curso1" name="curso" value="ads">
-        <label for="curso1">ADS</label><br>
-        <input type="checkbox" id="curso2" name="curso" value="jogos">
-        <label for="curso2">Jogos</label><br>
-        <input type="checkbox" id="curso3" name="curso" value="ti">
-        <label for="curso3">Gestão de TI</label><br>
-        <input type="checkbox" id="curso4" name="curso" value="dados">
-        <label for="curso4">Banco de dados</label><br><br>
-
-        <h2>Modelo:</h2>
-        <input type="radio" id="presencial" name="modelo" value="presencial" checked>
-        <label for="presencial">Presencial</label><br>
-        <input type="radio" id="semipresencial" name="modelo" value="semipresencial">
-        <label for="semipresencial">Semipresencial</label><br>
-        <input type="radio" id="EAD" name="modelo" value="EAD">
-        <label for="EAD">EAD</label><br><br>
-
-        <button type="submit">Enviar</button>
-    </form>
+    <div class="paddingEsq">
+        <h1 class="jersey">Página Pessoal</h1>
+        <h2>Nome: Izabelly Fernandes</h2>
+        <div class="centered">
+            <center><img src="WhatsApp Image 2024-08-27 at 23.42.13 (3).jpeg" width="230" height="200" alt="Imagem pessoal"/></center>
+        </div>
+        <p><em>Tenho 19 anos, estou cursando engenharia de computação na Facens e agronomia na Anhanguera, atualmente trabalho como caixa em um mercado de bairro e gerencio uma franquia de mini mercado de condomínio. Tenho um irmãozinho de 2 anos e gosto de passar momentos com a minha família.</em></p>
+    </div>
+    <div class="container">
+        <h3>
+            <a href="pag.html">Projetos Pessoais:</a><br>
+            <a href="pag2.html">Hobbies:</a><br>
+            <a href="pag3.html">Contatos:</a>
+        </h3>
+    </div>
 </body>
-
 </html>
