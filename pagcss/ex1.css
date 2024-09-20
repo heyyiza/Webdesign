@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: 97vh;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.rabbit {
+    border: 5px solid #33d506;
+}
+img {
+    width: 120px;
+    height: 120px;
+}
+h1 {
+    color: #1db634;
+    text-align: center;
+    margin-top: 0;
+}
+a:link {
+    color: #cf0079;
+    text-decoration: none;
+    direction: center;    text-align: center;
+}

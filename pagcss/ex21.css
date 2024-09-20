@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 97vh;
+    flex-direction: row;
+    width: 80%;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 80%;
+}
+
+.duck {
+    border: 5px solid yellow;
+}
+
+
+.circle {
+    border-radius: 50%;
+}
+
+.rabbit {
+    border: 5px solid #33d506;
+}
+
+.cat {
+    border: 5px solid #df1005;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #1db634;
+    text-align: center;
+    margin-top: 0;
+}
+
+a:link {
+    color: #cf0079;
+    text-decoration: none;
+    direction: center;
+    text-align: center;
+}
