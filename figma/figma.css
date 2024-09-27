@@ -80,11 +80,13 @@ h2 {
     max-height: 30vh;
     border-radius: 20px;
     margin-right: 35px;
+    border: #3f3f3f 0.1px solid;
 }
 .image2 img {
     max-width: 20vh;
     max-height: 30vh;
     border-radius: 20px;
+    border: #3f3f3f 0.1px solid;
 }
 
 .image2 {
