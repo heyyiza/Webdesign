@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Interativo com Botões Estilizados</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo"> Meu Título</h1>
+    <p id="paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nihil adipisci aut quia eaque consequatur illo maxime saepe ipsum laboriosam! Totam minus error dicta exercitationem non enim a esse tenetur?</p>
+    
+    <div class="imagem-container">
+        <img id="imagem" src="https://img.freepik.com/vetores-gratis/gato-bonito-sentado-ilustracao-em-vetor-icone-dos-desenhos-animados-conceito-de-icone-de-natureza-animal-isolado-de-vetor-premium-estilo-de-desenho-animado-plano_138676-4148.jpg" alt="Imagem de Gato">
+        <button id="btnAlterarImagem">Alterar Imagem</button>
+    </div>
+
+    <div class="botoes-container">
+        <button id="btnAlterarTitulo">Título</button>
+        <button id="btnAlterarCor">Parágrafo</button>
+        <button id="btnTocarAudio">Áudio</button>
+        <button id="btnAlterarButtons">Altera Buttons</button>
+    </div>
+
+    <audio id="audio" src="audio.mp3"></audio>
+
+    <script>
+        const titulo = document.getElementById('titulo');
+        const paragrafo = document.getElementById('paragrafo');
+        const imagem = document.getElementById('imagem');
+        const audio = document.getElementById('audio');
+        const buttons = document.querySelectorAll('button');
+
+        const originalTitulo = 'Meu Título';
+        const novoTitulo = 'Meu Título';
+        const originalImagem = 'https://img.freepik.com/vetores-gratis/gato-bonito-sentado-ilustracao-em-vetor-icone-dos-desenhos-animados-conceito-de-icone-de-natureza-animal-isolado-de-vetor-premium-estilo-de-desenho-animado-plano_138676-4148.jpg';
+        const novaImagem = 'gato1.jpg'; 
+
+        let tituloAlterado = false;
+        let imagemAlterada = false;
+
+        function alterarImagem() {
+            if (imagemAlterada) {
+                imagem.src = originalImagem;
+            } else {
+                imagem.src = novaImagem;
+            }
+            imagemAlterada = !imagemAlterada; 
+        }
+
+        function alterarTitulo() {
+            if (tituloAlterado) {
+                titulo.innerText = originalTitulo;
+                titulo.classList.remove('titulo-alterado');
+            } else {
+                titulo.innerText = novoTitulo;
+                titulo.classList.add('titulo-alterado');            }
+            tituloAlterado = !tituloAlterado; 
+        }
+
+        function alterarCorParagrafo() {
+            paragrafo.classList.toggle('red');
+            paragrafo.classList.toggle('blue');
+        }
+
+        function tocarAudio() {
+            audio.play();
+        }
+
+        function alterarButtons() {
+            buttons.forEach(button => {
+                button.classList.toggle('botao-alterado');
+            });
+        }
+
+        document.getElementById('btnAlterarImagem').onclick = alterarImagem;
+        document.getElementById('btnAlterarTitulo').onclick = alterarTitulo;
+        document.getElementById('btnAlterarCor').onclick = alterarCorParagrafo;
+        document.getElementById('btnTocarAudio').onclick = tocarAudio;
+        document.getElementById('btnAlterarButtons').onclick = alterarButtons;
+    </script>
+
+</body>
+</html>
