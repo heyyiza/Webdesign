@@ -14,15 +14,15 @@ p {
 
 .imagem-container {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
+    justify-content: center;
     margin: 20px;
 }
 
 img {
     width: 300px;
     height: auto;
-    margin-right: 20px; /* Espaço entre a imagem e o botão */
+    margin-right: 20px; 
 }
 
 .botoes-container {
@@ -30,7 +30,7 @@ img {
 }
 
 button {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; 
     border: none;
     color: white;
     padding: 15px 20px;
@@ -40,34 +40,34 @@ button {
     font-size: 16px;
     margin: 10px;
     cursor: pointer;
-    border-radius: 8px; /* Cantos arredondados */
-    transition: background-color 0.3s; /* Efeito de transição */
+    border-radius: 8px; 
+    transition: background-color 0.3s;
 }
 
-/* Estilo para botões alternados */
+
 .botao-alterar {
-    background-color: transparent; /* Fundo transparente */
-    border: 2px solid #4CAF50; /* Borda verde */
-    color: #4CAF50; /* Texto verde */
+    background-color: transparent; 
+    border: 2px solid #4CAF50; 
+    color: #4CAF50; 
 }
 
 .botao-alterar:hover {
-    background-color: #4CAF50; /* Fundo verde ao passar o mouse */
-    color: white; /* Texto branco ao passar o mouse */
+    background-color: #4CAF50; 
+    color: white; 
 }
 
-/* Estilo para botão de áudio */
+
 .botao-audio {
-    background-color: #2196F3; /* Azul */
+    background-color: #2196F3; 
     color: white;
 }
 
 .botao-audio:hover {
-    background-color: #1976D2; /* Azul mais escuro ao passar o mouse */
+    background-color: #1976D2; 
 }
 
 button:hover {
-    background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+    background-color: #45a049; 
 }
 
 .red {
@@ -77,20 +77,20 @@ button:hover {
 .blue {
     color: blue;
 }
-/* Estilos existentes aqui */
+
 
 .botao-alterado {
-    background-color: #FF5722; /* Laranja */
+    background-color: #FF5722; 
     color: white;
-    border: 2px solid #FF5722; /* Borda laranja */
+    border: 2px solid #FF5722; 
 }
 
 .botao-alterado:hover {
-    background-color: #E64A19; /* Laranja mais escuro ao passar o mouse */
+    background-color: #E64A19; 
 }
 .titulo-alterado {
-    font-family: 'Arial Black', sans-serif; /* Altere a fonte conforme necessário */
-    font-size: 2em; /* Tamanho da fonte */
-    color: #ff5733; /* Cor do texto */
-    text-transform: uppercase; /* Letras maiúsculas */
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 2em; 
+    color: #ff5733; 
+    text-transform: uppercase;
 }
