@@ -1,5 +1,6 @@
 function Calendar({ selectedDate, workouts, onDateSelect }) {
     try {
+        
         const [currentMonth, setCurrentMonth] = React.useState(new Date().getMonth());
         const [currentYear, setCurrentYear] = React.useState(new Date().getFullYear());
 

@@ -3,6 +3,7 @@ function saveWorkouts(workouts) {
 }
 
 function getWorkouts() {
+    
     const workouts = localStorage.getItem('workouts');
     return workouts ? JSON.parse(workouts) : {};
 }

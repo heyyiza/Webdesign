@@ -1,5 +1,6 @@
 function ExerciseList({ date, exercises, onToggleComplete, onRemoveExercise }) {
     try {
+        
         if (!exercises || exercises.length === 0) {
             return (
                 <div data-name="empty-exercise-list" className="text-center p-8 bg-gray-50 rounded">

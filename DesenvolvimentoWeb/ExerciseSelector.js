@@ -1,5 +1,6 @@
 function ExerciseSelector({ onAddExercise }) {
     try {
+        
         const [exercises, setExercises] = React.useState(getExercises());
         const [newExercise, setNewExercise] = React.useState({ name: '', category: '' });
         const [showForm, setShowForm] = React.useState(false);

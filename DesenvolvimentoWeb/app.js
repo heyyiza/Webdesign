@@ -7,6 +7,7 @@ function App() {
             setWorkouts(getWorkouts());
         }, []);
 
+        
         const handleDateSelect = (date) => {
             setSelectedDate(date);
         };
