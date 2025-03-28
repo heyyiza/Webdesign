@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidor de Vacinas</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { max-width: 600px; margin: auto; padding: 20px; }
+        label, select, input { display: block; margin: 10px 0; width: 100%; }
+        .posto { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro e Escolha de Vacina</h1>
+        <form id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            
+            <label for="vacina">Escolha a Vacina:</label>
+            <select id="vacina" required>
+                <option value="">Selecione...</option>
+                <option value="COVID-19">COVID-19</option>
+                <option value="Influenza">Influenza</option>
+                <option value="Hepatite B">Hepatite B</option>
+            </select>
+            
+            <button type="submit">Buscar Posto</button>
+        </form>
+        
+        <div id="resultado" class="posto" style="display:none;"></div>
+    </div>
+
+    <script>
+        const postos = [
+            { nome: "UBS Centro", endereco: "Rua A, Sorocaba", vacinas: ["COVID-19", "Influenza"] },
+            { nome: "UBS Zona Norte", endereco: "Rua B, Sorocaba", vacinas: ["Hepatite B", "Influenza"] },
+            { nome: "UBS Zona Sul", endereco: "Rua C, Sorocaba", vacinas: ["COVID-19", "Hepatite B"] }
+        ];
+
+        document.getElementById("formCadastro").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const vacinaEscolhida = document.getElementById("vacina").value;
+            const postoDisponivel = postos.find(p => p.vacinas.includes(vacinaEscolhida));
+            const resultado = document.getElementById("resultado");
+            
+            if (postoDisponivel) {
+                resultado.innerHTML = `<h2>Posto Disponível</h2><p><strong>${postoDisponivel.nome}</strong></p><p>${postoDisponivel.endereco}</p>`;
+                resultado.style.display = "block";
+            } else {
+                resultado.innerHTML = `<h2>Nenhum posto disponível para esta vacina</h2>`;
+                resultado.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
